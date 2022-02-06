@@ -1,16 +1,54 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+  font-family:'Interstate';
+  src: url("/fonts/Interstate-regular.ttf");
+  font-style: normal;
+};
+
+
+html, body { 
+  margin: 0!important; 
+  font-family:'Interstate';
+
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+#cloud {
+  overflow: hidden;
+  width: 1px; height: 1px;
+  transform: translate(-100%, -100%);
+  border-radius: 50%;
+  filter: url(#filter);
+}
+.container{
+  cursor: pointer;
+  font-family:'Interstate';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+margin: auto;
+
+}
+h1{
+  color: #fa4659;
+  font-family:'Interstate';
+
+
+   font-weight: 800;
+   text-align: center;
+
+
 }
 
-* {
-  box-sizing: border-box;
+.quote{
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: flex-end;
+  padding:4rem 2rem;
+
+
+}
+p{
+  color: #fa4659;
+  font-family:'Interstate';
 }
